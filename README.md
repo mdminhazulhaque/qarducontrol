@@ -19,7 +19,7 @@ Burn once and control your Arduino board via USB/Serial.
 You need to burn `sketch/QArduControl.ino` to your MCU and then connect it via usb/serial port.
 
 ## Installing QtSerialPort ##
-QtSerialPort is available for download at from its gitorious repository.
+If you don't have Qt5, then QtSerialPort is available for download at from its gitorious repository.
 
 ```
 git clone git://gitorious.org/qt/qtserialport.git
