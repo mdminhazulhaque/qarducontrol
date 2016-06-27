@@ -11,26 +11,12 @@ Burn once and control your Arduino board via USB/Serial.
 * Read uptime in millis
 
 ## Requirements ##
-* Qt 4/5
-* QtSerialPort library
+* Qt 5
 * Arduino Uno board/other compatible boards
 
 ## How to use ##
 You need to burn `sketch/QArduControl.ino` to your MCU and then connect it via usb/serial port.
 
-## Installing QtSerialPort ##
-If you don't have Qt5, then QtSerialPort is available for download at from its gitorious repository.
-
-```
-git clone git://gitorious.org/qt/qtserialport.git
-```
-After cloning, cd to it and build.
-```
-cd qtserialport
-qmake
-make
-sudo make install
-```
 ## Screenshots ##
 QArduControl GUI
 
