@@ -35,7 +35,7 @@ Window::~Window()
 void Window::digitalWrite(int value)
 {
     int pin = sender()->objectName().remove("check_digital_").toInt();
-    arduino->write(QString("d %1 %2)").arg(pin).arg(value).toAscii());
+    arduino->write(QString("d %1 %2)").arg(pin).arg(value).toLatin1());
     //qDebug() << "digitalWrite(" << pin << "," << value << ");";
 }
 
@@ -43,7 +43,7 @@ void Window::analogWrite(int value)
 {
     int pin = sender()->objectName().remove("pwm_").toInt();
     //qDebug() << "analogWrite(" << pin << "," << value << ");";
-    arduino->write(QString("a %1 %2)").arg(pin).arg(value).toAscii());
+    arduino->write(QString("a %1 %2)").arg(pin).arg(value).toLatin1());
 }
 
 void Window::analogRead()
